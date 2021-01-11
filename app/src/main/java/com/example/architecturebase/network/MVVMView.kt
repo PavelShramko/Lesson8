@@ -40,6 +40,7 @@ class MVVMView : Fragment(){
             adapter = mainAdapter
         }
 
+
         val observer = Observer<List<Post>?> {
             mainAdapter.items = it
             binding?.listSRL?.isRefreshing = false
