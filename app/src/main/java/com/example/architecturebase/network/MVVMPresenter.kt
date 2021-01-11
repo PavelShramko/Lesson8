@@ -32,7 +32,6 @@ class MVVMPresenter() : ViewModel(), MVVMContract.IPresenter, LifecycleObserver 
         })
     }
 
-
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun onStart() {
         getPosts()
